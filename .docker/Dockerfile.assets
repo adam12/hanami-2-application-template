@@ -1,0 +1,6 @@
+FROM node:lts-slim
+
+WORKDIR /usr/src/app
+COPY .assets/package.json ./.assets/
+COPY package.json yarn.lock ./
+RUN yarn install
