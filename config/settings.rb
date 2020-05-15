@@ -10,5 +10,5 @@ Hanami.application.settings do
 
   # Assets
   setting :precompiled_assets, Types::Params::Bool.optional.default(false)
-  setting :assets_server_url, Types::String.optional.default("http://localhost:8080")
+  setting :assets_server_url, Types::String.optional.default("")
 end

@@ -133,10 +133,7 @@ module.exports = function config(mode) {
         mode === "development"
           ? path.resolve(__dirname, "./tmp/assets")
           : path.resolve(__dirname, "..", "./public/assets"),
-      publicPath:
-        mode === "development"
-          ? `http://localhost:${process.env.PORT}/assets/`
-          : "/assets/",
+      publicPath: "/assets/",
     },
     resolve: {
       mainFields: ["module", "main"],

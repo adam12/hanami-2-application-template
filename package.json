@@ -13,6 +13,7 @@
     "npm": "*"
   },
   "scripts": {
+    "watch": "node ./.assets/scripts/build.js development",
     "start": "PORT=8080 concurrently \"node ./.assets/scripts/build.js development\" \"serve ./.assets/tmp\" --kill-others --prefix-colors=yellow.dim,cyan.dim",
     "build": "NODE_ENV=production node ./.assets/scripts/build.js production",
     "build-production": "yarn run build",
